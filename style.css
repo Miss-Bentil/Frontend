@@ -1,232 +1,149 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
+    margin: 0;
+    padding:0;
 }
 
-html {
-    height:100%;
-}
-
-
-body{
-    font-family: "Poppins", sans-serif;
-    background-image:url("/beach-yoga-pose-in-sand-at-sunset.jpg");
-    background-repeat: no-repeat;
+header{
+    width:100%;
+    height: 100vh;
+    background: url("/beach-yoga-pose-in-sand-at-sunset.jpg");
     background-position: center;
-    background-attachment: fixed;
-    background-size:cover;
-    otline: 2px solid black;
-    width:auto;
-    min-height:100%;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-
-
-
-
-div > ul a{
-    text-decoration:none;
-    color:rgb(255, 245, 245);
-}
-div section a:link, a:visited{
-    color:white;
-    text-decoration: none;
-    padding: 2px 8px;
-    /*border:1px solid blue;*/
-    border-radius: 10px;
-}
-
-
-
-.top-bar{
+.topbar{
     display:flex;
     position:fixed;
-    align-items: center;
+    align-items: left;   
     justify-content: space-between;
-    padding: 7px 20px;
-    background-color: rgb(87, 74, 20);
+    padding:5px 20px;
+    background-color: rgb(87,74,20);
     box-shadow:none;
     width:100%;
     box-sizing: border-box;
-    
 
+}
+
+.topbar span{
+    color:white;
     
 }
 
 
-
-
-.top-bar ul{
-    margin:0px 20px;
+.topbar ul{
+    margin: 0px 20px;
     list-style: none;
     display:flex;
 }
-
-.top-bar li{
+   
+.topbar li{
     margin:0px 20px 0px 20px
 
-}
+}    
 
-
-.top-bar  a:hover{
-    color:black;
-    text-decoration:none;
-}
-
-
-
-nav{
-    
-    padding: 5px 90px;
-    align-items: center;
-    margin-top: 35px;
-    display:flex;
-    position:fixed;
-    align-items: center;
-    justify-content: space-between;
-    
-    background-color:#61683d3d;
-    background-image: none;
-    box-shadow:none;
-    width:100%;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgb(34, 26, 26);
-
-    
-
-}
-nav a {
+.topbar a{
     color:white;
-    text-decoration:none;
-    
 }
 
-nav a:hover{
-    color:black;
-}
- nav div{
-     font-size:30px;
-     width:50px;
-     
- }
-
- 
-.logo{
-    flex:0.9;
-    margin-top:0px
+.topbar a:hover{
+    color:rgb(210, 140, 18);
+    background-color: none;  
 }
 
-.checkbtn{
-    color:rgb(247, 243, 243);
-    font-size: 25px;
-    cursor:pointer;
+ul{
+    list-style-type: none;
     float:right;
-    display:none;
-
-}
-#check{
-    display:none;
+    margin-top: 25px; 
 }
 
-@media screen and (max-width: 990px){
-    nav{
-        padding:0px 50px;
-
-    }
-    .checkbtn{
-        display:block;
-    }
-    nav.logo p{
-        font-size: 30px;
-    }
-    nav ul{
-        width: 100%;
-        height:100vh;
-        background-color: rgb(196, 162, 51);
-        position:fixed;
-        top:75px;
-        left:100%;
-        text-align: center;
-        transition: 0.4s ease;
-    }
-    nav ul li{
-        display:block;
-        margin:60px 0px;
-        line-height: 20px;
-
-    }
-    #check: checked ~ ul{
-        left:0;
-    }
+ul li{
+    display:inline-block;
 }
 
-.menu{
+
+ul li.active a{
+    background-color: rgb(87,74,20);
+    color: black;
+
+}
+
+.main {
+    top:0;
+    left:0;
+    width:100%;
+    height: 70px;
+    padding: 4px 50px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.15);
+    border-bottom:1px solid #fff;
+}
+
+
+
+
+.main ul li a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius:4px;
+    padding: 3px 20px;
+    margin: 6px 2px;
+    transition: 0.6s ease;
     display:flex;
+    
+}
+
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.logo{
+    float:left;
+    font-size: 35px;
+    margin-top: 25px;
+    margin-left: 25px;
+    
+}
+
+.signup{
+    position: fixed;
+    display: flex;
+    margin-top: 15%;
+    margin-left: 65%;
     align-items:center;
-    list-style: none;
-    
-    
-}
-
-.menu li{
-    padding:10px 8px;
-    font-size: 20px;
-    
-
-}
-
-nav li .active{
-    color:black
-}
-
-.toogle{
-    font-size:20px;
-    display:none;
-}
-
-
-.introduction{
-    position:absolute;
-    margin-top: 20%;
-    margin-left:50%;
-    display:flex;
-    align-items: center;
     justify-content: center;
-    color:bisque;
     height:20vh;
-    width:50%;
-    background-color: rgba(0);
-    font-family:Georgia, 'Times New Roman', Times, serif;
+
 }
 
 h3{
-    position:absolute;
-    margin-top: 15%;
-    margin-left: 3%;
+    position: absolute;
+    margin-top:65%;
+    margin-left: 0%;
     display:flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
-    color:black;
-    height:20vh;
-    width:50%;
-   
-
-}
- h3 a:link,a:visited{
-    background-color: rgb(248, 108, 108);
-    padding:10px 25px;
-    text-align:center;
-    text-decoration: none;
-    border-radius: 10px;
+    height: 20vh;
+    
     
 
+
 }
 
+
+h3 a:link,a:visited{
+    background-color: rgb(87,74,20);
+    padding:10px 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    color:white;
+
+}
 h3 a:hover{
-    background-color: rgb(131, 44, 44);
+    color:rgb(206, 67, 17);
+    background-color:rgb(159, 144, 144)
 }
 
 
