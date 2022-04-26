@@ -1,15 +1,23 @@
 *{
     margin: 0;
     padding:0;
+    font-family: 'Poppins', sans-serif;   
+    /*box-sizing: border-box;*/
 }
+
+
+    
+
+
 
 header{
     width:100%;
-    height: 100vh;
+    min-height: 100vh;
     background: url("/beach-yoga-pose-in-sand-at-sunset.jpg");
-    background-position: center;
+    background-position: center; 
     background-size: cover;
     background-repeat: no-repeat;
+    position:relative;
 }
 
 .topbar{
@@ -27,6 +35,7 @@ header{
 
 .topbar span{
     color:white;
+    text-decoration: none;
     
 }
 
@@ -48,15 +57,21 @@ header{
 
 .topbar a:hover{
     color:rgb(210, 140, 18);
-    background-color: none;  
+    background-color: none;
+    
+
 }
+
+
+
 
 ul{
     list-style-type: none;
     float:right;
-    margin-top: 25px; 
-}
+    margin-top: 25px;
+    
 
+}
 ul li{
     display:inline-block;
 }
@@ -64,31 +79,43 @@ ul li{
 
 ul li.active a{
     background-color: rgb(87,74,20);
-    color: black;
+    color:black;
+    
 
 }
 
+
 .main {
-    top:0;
+    top:10;
     left:0;
     width:100%;
-    height: 70px;
+    height: 85px;
     padding: 4px 50px;
     box-sizing: border-box;
     background: rgba(0,0,0,0.15);
     border-bottom:1px solid #fff;
 }
 
+section > a{
+    font-size: 25px;
+    top: 50%;
+    text-decoration: none;
+    float:left;
+    font-size: 35px;
+    margin-top: 25px;
+    margin-left: 25px;
+    color:black;
+}
 
 
 
-.main ul li a {
+.links ul li a {
     text-decoration: none;
     color: white;
     border: 1px solid white;
     border-radius:4px;
     padding: 3px 20px;
-    margin: 6px 2px;
+    margin: 10px 2px;
     transition: 0.6s ease;
     display:flex;
     
@@ -99,57 +126,97 @@ ul li a:hover{
     color: black;
 }
 
-.logo{
-    float:left;
-    font-size: 35px;
-    margin-top: 25px;
-    margin-left: 25px;
-    
-}
+
 
 .signup{
-    position: fixed;
+    position: sticky;
     display: flex;
-    margin-top: 15%;
-    margin-left: 65%;
+    margin-top: -25%;
+    margin-left: 70%;
     align-items:center;
     justify-content: center;
-    height:20vh;
+    height:20vh; 
+    top:50%;
+    left:50%;
+    transform: translate(-30%, -30%);
 
 }
 
-h3{
+.signup h1{
+    font-size: 40px;
+}
+
+.herobtn{
     position: absolute;
-    margin-top:65%;
+    margin-top: 40%;
     margin-left: 0%;
-    display:flex;
+    display:inline-block;
     align-items:center;
     justify-content: center;
-    height: 20vh;
-    
-    
-
-
-}
-
-
-h3 a:link,a:visited{
-    background-color: rgb(87,74,20);
-    padding:10px 25px;
+    padding: 12px 34px;
     text-decoration: none;
+    border: 1px solid white;
     border-radius: 10px;
+    background-color: transparent;
     color:white;
+    
 
-}
-h3 a:hover{
-    color:rgb(206, 67, 17);
-    background-color:rgb(159, 144, 144)
 }
 
 
+.herobtn:hover{
+  transition: 1s;
+  color:rgb(180, 129, 20);
+  background:white;
+   
+}
 
-    
-    
+#show{
+    display:none;
+}
+
+
+
+@media(max-width: 700px){
+    .signup h1{
+        font-size: 40px;
+    }
+    .main ul li{
+        display:block;
+        
+    }
+    .links{
+        position:absolute;
+        background: rgb(218, 171, 30);
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right:-200px;
+        /*text-align:left;
+        align-items: center; */
+        z-index: 2;
+        transition: 1s;
+       
+
+    }
+    section i{ 
+        display:block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor:pointer;
+    }
+     #show{
+      display:block;
+      transform: translate(60%, 100%);
+      
+        
+    }
+    .links ul li{
+        margin-right: 50px;
+
+    }
+}
 
 
 
