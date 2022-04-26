@@ -7,6 +7,9 @@
     <title>Yoga Or Bust</title>
     <link rel="stylesheet" href="project1.css">
     <script src="https://kit.fontawesome.com/f025ae3535.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200;1,300;1,600&display=swap" rel="stylesheet">
     
 <body>
     <header>
@@ -20,33 +23,56 @@
             <span><a href="#"><i class="fa-solid fa-phone"> +233 204 589 375</i></a></span>
         </div>
 
-        <div class="main">
-            <div class="logo">Yoga Or Bust</div>
-            <ul>
-                <li class=" active "><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Classes</a></li>
-                <li><a href="">trainers</a></li>
-
-            </ul>
-        </div>
-        <div class="signup"> 
-            <h1>Pause.Breathe.</h1><br>
-            <h3 ><a href="#" > Join Us </a></h3>
-
-
-
-        </div>
-
+        <section class="main">
+            <a href="index.html ">Yoga Or Bust</a>
+            <div class="links" id="sectionLinks" >
+                <i class= "fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li class=" active "><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                     <li><a href="">Classes</a></li>
+                    <li><a href="">Trainers</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="show" onclick="showMenu()"></i>
+        </section>   
+    
 
 
     </header>
     
+<!--    WORK IN PROGRESS 
+    <div class="signup"> 
+        <h1>Pause.Breathe.</h1><br>
+        <a class="herobtn" href="#" > Join Us </a></h3>
+    </div>
+    <section class="classes">
+-->
 
 
 
+
+
+
+
+
+
+
+    </section>
         
     
+    <script>
+        var sectionlinks = document.getElementById("sectionLinks");
+        function showMenu(){
+            sectionlinks.style.right = "0";
+        }
+        function hideMenu(){
+            sectionlinks.style.right = "-200px";
+        }
+
+
+
+
+    </script> 
 </body>
 </html>
-
