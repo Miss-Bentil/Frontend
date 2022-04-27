@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Or Bust</title>
+    <link rel="stylesheet" href="project1.css">
+    <script src="https://kit.fontawesome.com/f025ae3535.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,200;1,300;1,600&display=swap" rel="stylesheet">
+    
+<body>
+    <header>
+        <div class="topbar">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+            </ul>
+            <span><a href="#"><i class="fa-solid fa-phone"> +233 204 589 375</i></a></span>
+        </div>
+
+        <section class="main">
+            <a href="index.html ">Yoga Or Bust</a>
+            <div class="links" id="sectionLinks" >
+                <i class= "fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li class=" active "><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                     <li><a href="">Sessions</a>
+                        <div class="submenu">
+                            <ul>
+                                <li><a href="#">Online</a></li>
+                                <li><a href="#">Schedule</a></li>
+                                <li><a href="#">Courses</a></li>
+
+                            </ul>
+
+
+                        </div>
+                    
+                    
+                    
+                    </li>
+                    <li><a href="">Trainers</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="show" onclick="showMenu()"></i>
+        </section>   
+    
+
+
+    </header>
+    
+
+    <div class="signup"> 
+        <h1>Pause.Breathe.</h1><br>
+        <a class="herobtn" href="#" > Join Us </a></h3>
+    </div>
+
+    <!--ABOUT-->
+
+    <section class="about">
+        <h1>About Us</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique delectus cum dolorum asperiores assumenda laboriosam voluptatibus, quisquam eos ducimus repudiandae quod. Beatae quam iure illo corporis placeat reprehenderit, iusto perferendis.</p>
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+        
+    
+    <script>
+        var sectionlinks = document.getElementById("sectionLinks");
+        function showMenu(){
+            sectionlinks.style.right = "0";
+        }
+        function hideMenu(){
+            sectionlinks.style.right = "-200px";
+        }
+
+
+
+
+    </script> 
+</body>
+</html>
